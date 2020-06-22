@@ -22,10 +22,26 @@ import SortedArraySet from 'collections/sorted-array-set'
 const math = create(all)
 
 const watch_list = [
-    '100038',
-    '110003',
-    '110022',
-    '519915',
+    "100038",
+    "110003",
+    "481012",
+    "519915",
+    "110022",
+    "161035",
+    "001182",
+    "003095",
+    "003096",
+    "004746",
+    "006218",
+    "006228",
+    "006229",
+    "006724",
+    "006796",
+    "007230",
+    "008975",
+    "008976",
+    "009162",
+    "009265",
 ]
 
 class App extends Component {
@@ -34,7 +50,7 @@ class App extends Component {
         super(props);
         this.state = {
           option: {},
-          style: {height: watch_list.length * 500 + 'px', width: '100%'}
+          style: {height: watch_list.length * 300 + 'px', width: '100%'}
         };
     }
 
@@ -94,18 +110,18 @@ class App extends Component {
 
             titles.push({
                 text: name + " - " + watch_list[fundIdx],
-                top: '' + ((fundIdx) * 15 + 5) + '%',
+                top: '' + ((fundIdx) * 300 + 5) + 'px',
                 left: 'center',
                 // textAlign:'center'
             })
 
             grids.push({
                 show: true,
-                top: '' + ((fundIdx) * 15 + 5) + '%',
+                top: '' + ((fundIdx) * 300 + 10) + 'px',
+                height: "200px"
                 // left: 'center',
                 // right: '20%',
                 // width:'auto',
-                height:'10%'
             })
 
             xAxis.push({
